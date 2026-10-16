@@ -1,0 +1,30 @@
+{
+ "meta": {"title": "App 綁定教學", "width": 720, "height": 1280, "fps": 30, "background": "bg"},
+ "palette": {"bg": "#1b1f3b", "fg": "#f5f3ff", "accent": "#ff8a5b", "accent2": "#9fb4ff", "muted": "#9b9cc0", "card": "#262b52"},
+ "scenes": [
+  {"name": "標題", "duration": 3, "transition": {"type": "cut", "dur": 0},
+   "elements": [
+    {"type": "text", "x": 60, "y": 470, "w": 600, "h": 80, "props": {"text": "三步完成", "size": 44, "weight": 500, "color": "accent2"}, "in": {"effect": "fade", "start": 0.2, "dur": 0.5}},
+    {"type": "text", "x": 60, "y": 550, "w": 600, "h": 220, "props": {"text": "會員卡\n綁定手機", "size": 92, "weight": 900, "color": "fg", "lineHeight": 1.15}, "in": {"effect": "slideUp", "start": 0.4, "dur": 0.7}}
+   ]},
+  {"name": "步驟 1", "duration": 4, "transition": {"type": "slide", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 60, "y": 110, "w": 600, "h": 60, "props": {"text": "步驟 1", "size": 34, "weight": 700, "color": "accent"}, "in": {"effect": "fade", "start": 0.5, "dur": 0.4}},
+    {"type": "text", "x": 60, "y": 170, "w": 600, "h": 140, "props": {"text": "打開 App，點右下角「我的」", "size": 52, "weight": 700, "color": "fg"}, "in": {"effect": "slideUp", "start": 0.6, "dur": 0.5}},
+    {"type": "image", "x": 110, "y": 360, "w": 500, "h": 780, "props": {"fit": "cover", "radius": 28}, "in": {"effect": "scale", "start": 0.9, "dur": 0.6}},
+    {"type": "shape", "x": 470, "y": 1010, "w": 110, "h": 110, "props": {"shape": "circle", "fill": "none", "stroke": "accent", "strokeWidth": 8}, "in": {"effect": "pop", "start": 1.8, "dur": 0.5}}
+   ]},
+  {"name": "步驟 2", "duration": 4, "transition": {"type": "slide", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 60, "y": 110, "w": 600, "h": 60, "props": {"text": "步驟 2", "size": 34, "weight": 700, "color": "accent"}, "in": {"effect": "fade", "start": 0.5, "dur": 0.4}},
+    {"type": "text", "x": 60, "y": 170, "w": 600, "h": 140, "props": {"text": "選「綁定會員卡」，輸入手機號碼", "size": 52, "weight": 700, "color": "fg"}, "in": {"effect": "slideUp", "start": 0.6, "dur": 0.5}},
+    {"type": "image", "x": 110, "y": 360, "w": 500, "h": 780, "props": {"fit": "cover", "radius": 28}, "in": {"effect": "scale", "start": 0.9, "dur": 0.6}}
+   ]},
+  {"name": "步驟 3", "duration": 4, "transition": {"type": "slide", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 60, "y": 110, "w": 600, "h": 60, "props": {"text": "步驟 3", "size": 34, "weight": 700, "color": "accent"}, "in": {"effect": "fade", "start": 0.5, "dur": 0.4}},
+    {"type": "text", "x": 60, "y": 170, "w": 600, "h": 140, "props": {"text": "輸入簡訊驗證碼就完成了", "size": 52, "weight": 700, "color": "fg"}, "in": {"effect": "typewriter", "start": 0.6, "dur": 1.2, "ease": "linear"}},
+    {"type": "list", "x": 60, "y": 420, "w": 600, "h": 500, "props": {"items": ["點數自動合併", "生日禮直接入帳", "消費免出示實體卡"], "bullet": "check", "size": 44, "color": "fg", "accent": "accent", "gap": 40, "stagger": 0.4}, "in": {"effect": "slideUp", "start": 1.9, "dur": 0.5}}
+   ]}
+ ]
+}

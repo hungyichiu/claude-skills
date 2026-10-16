@@ -1,0 +1,31 @@
+{
+ "meta": {"title": "新報銷流程說明", "width": 1280, "height": 720, "fps": 30, "background": "bg"},
+ "palette": {"bg": "#0e2a2f", "fg": "#f1f5f2", "accent": "#f2b134", "accent2": "#63c5b8", "muted": "#8fa9a6", "panel": "#163a40"},
+ "scenes": [
+  {"name": "開場", "duration": 3.5, "transition": {"type": "cut", "dur": 0},
+   "elements": [
+    {"type": "shape", "x": 120, "y": 250, "w": 12, "h": 220, "props": {"shape": "rect", "fill": "accent", "growFrom": "bottom"}, "in": {"effect": "grow", "start": 0.1, "dur": 0.5}},
+    {"type": "text", "x": 160, "y": 240, "w": 960, "h": 130, "props": {"text": "報銷改成線上簽核", "size": 84, "weight": 900, "color": "fg"}, "in": {"effect": "slideUp", "start": 0.3, "dur": 0.7}},
+    {"type": "text", "x": 164, "y": 380, "w": 900, "h": 80, "props": {"text": "11 月 1 日起，紙本單據不再收件", "size": 38, "weight": 500, "color": "accent2"}, "in": {"effect": "fade", "start": 0.9, "dur": 0.6}}
+   ]},
+  {"name": "差在哪", "duration": 4.5, "transition": {"type": "fade", "dur": 0.4},
+   "elements": [
+    {"type": "text", "x": 120, "y": 90, "w": 1040, "h": 80, "props": {"text": "平均核准天數", "size": 48, "weight": 700, "color": "fg"}, "in": {"effect": "fade", "start": 0.2, "dur": 0.5}},
+    {"type": "counter", "x": 120, "y": 230, "w": 480, "h": 200, "props": {"from": 0, "to": 7, "suffix": " 天", "size": 150, "color": "muted", "align": "left"}, "in": {"effect": "count", "start": 0.5, "dur": 1.0}},
+    {"type": "text", "x": 124, "y": 440, "w": 480, "h": 60, "props": {"text": "紙本", "size": 34, "color": "muted"}, "in": {"effect": "fade", "start": 0.5, "dur": 0.5}},
+    {"type": "shape", "x": 560, "y": 300, "w": 160, "h": 60, "props": {"shape": "arrow", "dir": "right", "stroke": "fg", "strokeWidth": 6}, "in": {"effect": "draw", "start": 1.6, "dur": 0.5}},
+    {"type": "counter", "x": 740, "y": 230, "w": 480, "h": 200, "props": {"from": 7, "to": 2, "suffix": " 天", "size": 150, "color": "accent", "align": "left"}, "in": {"effect": "count", "start": 2.0, "dur": 1.0}},
+    {"type": "text", "x": 744, "y": 440, "w": 480, "h": 60, "props": {"text": "線上簽核", "size": 34, "color": "accent"}, "in": {"effect": "fade", "start": 2.0, "dur": 0.5}}
+   ]},
+  {"name": "三個步驟", "duration": 5, "transition": {"type": "slide", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 120, "y": 90, "w": 1040, "h": 80, "props": {"text": "送出只要三步", "size": 48, "weight": 700, "color": "fg"}, "in": {"effect": "fade", "start": 0.6, "dur": 0.5}},
+    {"type": "list", "x": 140, "y": 210, "w": 1000, "h": 400, "props": {"items": ["手機拍下發票", "選費用類別與專案", "送出，主管收到通知"], "bullet": "number", "size": 46, "color": "fg", "accent": "accent", "gap": 34, "stagger": 0.6}, "in": {"effect": "slideUp", "start": 1.0, "dur": 0.5}}
+   ]},
+  {"name": "結尾", "duration": 3.5, "transition": {"type": "zoom", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 140, "y": 250, "w": 1000, "h": 120, "props": {"text": "有問題找財務部 小林", "size": 64, "weight": 900, "color": "fg", "align": "center", "valign": "middle"}, "in": {"effect": "pop", "start": 0.4, "dur": 0.6}},
+    {"type": "text", "x": 140, "y": 390, "w": 1000, "h": 60, "props": {"text": "分機 2301", "size": 36, "color": "accent2", "align": "center"}, "in": {"effect": "fade", "start": 1.0, "dur": 0.5}}
+   ]}
+ ]
+}

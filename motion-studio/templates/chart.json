@@ -1,0 +1,28 @@
+{
+ "meta": {"title": "第三季營收重點", "width": 1280, "height": 720, "fps": 30, "background": "bg"},
+ "palette": {"bg": "#f4f1ea", "fg": "#1f2a37", "accent": "#2f6f5e", "accent2": "#c9862c", "muted": "#7b8794", "grid": "#d8d2c4"},
+ "scenes": [
+  {"name": "結論先講", "duration": 3.5, "transition": {"type": "cut", "dur": 0},
+   "elements": [
+    {"type": "text", "x": 110, "y": 170, "w": 1060, "h": 80, "props": {"text": "第三季營收", "size": 44, "weight": 500, "color": "muted"}, "in": {"effect": "fade", "start": 0.2, "dur": 0.5}},
+    {"type": "counter", "x": 110, "y": 250, "w": 1060, "h": 220, "props": {"from": 0, "to": 18, "prefix": "成長 ", "suffix": "%", "size": 170, "weight": 900, "color": "accent", "align": "left"}, "in": {"effect": "count", "start": 0.5, "dur": 1.4, "ease": "outExpo"}},
+    {"type": "text", "x": 114, "y": 480, "w": 1000, "h": 60, "props": {"text": "創下近三年單季新高", "size": 36, "weight": 500, "color": "fg"}, "in": {"effect": "slideUp", "start": 1.8, "dur": 0.5}}
+   ]},
+  {"name": "各季走勢", "duration": 5, "transition": {"type": "fade", "dur": 0.4},
+   "elements": [
+    {"type": "text", "x": 110, "y": 70, "w": 1060, "h": 70, "props": {"text": "營收連續三季上升（百萬元）", "size": 40, "weight": 700, "color": "fg"}, "in": {"effect": "fade", "start": 0.3, "dur": 0.5}},
+    {"type": "line", "x": 110, "y": 170, "w": 1060, "h": 470, "props": {"data": [{"label": "去年Q3", "value": 82}, {"label": "Q4", "value": 79}, {"label": "Q1", "value": 85}, {"label": "Q2", "value": 88.5}, {"label": "Q3", "value": 96.8}], "color": "accent", "strokeWidth": 6, "decimals": 1, "min": 60, "valueColor": "fg", "labelColor": "muted", "dotColor": "bg"}, "in": {"effect": "draw", "start": 0.6, "dur": 2.2, "ease": "inOutCubic"}}
+   ]},
+  {"name": "誰貢獻最多", "duration": 5, "transition": {"type": "slide", "dur": 0.5},
+   "elements": [
+    {"type": "text", "x": 110, "y": 70, "w": 1060, "h": 70, "props": {"text": "成長主要來自外銷", "size": 40, "weight": 700, "color": "fg"}, "in": {"effect": "fade", "start": 0.6, "dur": 0.5}},
+    {"type": "bars", "x": 110, "y": 180, "w": 1060, "h": 420, "props": {"orientation": "horizontal", "data": [{"label": "外銷", "value": 9.4, "color": "accent"}, {"label": "內銷通路", "value": 3.1, "color": "muted"}, {"label": "電商", "value": 2.3, "color": "muted"}], "unit": " 百萬", "decimals": 1, "labelSize": 30, "valueSize": 30, "labelWidth": 180, "stagger": 0.25}, "in": {"effect": "grow", "start": 1.0, "dur": 0.9}}
+   ]},
+  {"name": "下一步", "duration": 3.5, "transition": {"type": "fade", "dur": 0.4},
+   "elements": [
+    {"type": "shape", "x": 110, "y": 300, "w": 1060, "h": 4, "props": {"shape": "rect", "fill": "grid", "growFrom": "left"}, "in": {"effect": "grow", "start": 0.2, "dur": 0.6}},
+    {"type": "text", "x": 110, "y": 200, "w": 1060, "h": 90, "props": {"text": "第四季目標：外銷再加 10%", "size": 56, "weight": 900, "color": "fg"}, "in": {"effect": "slideUp", "start": 0.5, "dur": 0.6}},
+    {"type": "text", "x": 110, "y": 330, "w": 1060, "h": 60, "props": {"text": "新增東南亞兩家經銷商", "size": 34, "color": "accent2"}, "in": {"effect": "fade", "start": 1.1, "dur": 0.5}}
+   ]}
+ ]
+}
